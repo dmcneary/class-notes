@@ -3,8 +3,9 @@ This Github Pages site is here to host my notes for various college classes I've
 
 ### Courses:
 #### Santa Monica College:
-- [PHILOS9: Symbolic Logic](/philos9/)
+- [PHILOS9: Symbolic Logic](./philos9/)
+
 #### Cal State Northridge:
-- [COMP 222: Computer Organization](/comp222/)
-- [MATH 262: Linear Algebra](/math262/)
-- [PHYS 220B: Electricity and Magnetism](/phys220b/)
+- [COMP 222: Computer Organization](./comp222/)
+- [MATH 262: Linear Algebra](./math262/)
+- [PHYS 220B: Electricity and Magnetism](./phys220b/)
