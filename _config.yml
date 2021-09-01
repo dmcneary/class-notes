@@ -31,6 +31,7 @@ relative_links:
 markdown: kramdown
 kramdown:
   input: GFM
+  math_engine: katex
   entity_output: as_char
 
 # Exclude from processing.
