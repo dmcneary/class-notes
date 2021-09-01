@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Class Notes
+This repository was created to store my notes from my college classes. I started writing notes using Visual Studio Code during the Summer 2021 term at Santa Monica College for Prof. Paul Klumpe's Symbolic Logic class, and found that this method allowed me to share my notes with classmates in a clean, easy way while giving me the opportunity to dive into markup languages such as markdown and LaTeX, as well as being able to publish code for lab classes (just MATLAB so far).
 
-You can use the [editor on GitHub](https://github.com/dmcneary/class-notes/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+From Github Pages generated README:
 
 ### Markdown
 
@@ -28,10 +27,3 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dmcneary/class-notes/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
