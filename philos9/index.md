@@ -1,4 +1,4 @@
-# Notes
+## PHILOS9 - Symbolic Logic
 - [Monday June 21 - Core Concepts in Symbolic Logic](notes/6-21.html)
 - [Tuesday June 22 - Language of Sentential Logic](notes/6-22.html)
 - [Wednesday June 23 - Language of Sentential Logic pt 2](notes/6-23.html)
