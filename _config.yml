@@ -6,3 +6,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+markdown: kramdown
+kramdown:
+  entity_output: as_char
