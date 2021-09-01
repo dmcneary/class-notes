@@ -8,4 +8,5 @@ relative_links:
   collections: true
 markdown: kramdown
 kramdown:
+  input: GFM
   entity_output: as_char
