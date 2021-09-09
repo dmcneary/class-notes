@@ -1,5 +1,4 @@
 # Textbook Notes - Chapter 1
-September 5, 2021
 
 ## 1.1 - Introduction
 
