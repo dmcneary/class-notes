@@ -7,5 +7,6 @@ This Github Pages site is here to host my notes for various college classes I've
 
 #### Cal State Northridge:
 - [COMP 222: Computer Organization](./comp222/)
+- [COMP 282: Advanced Data Structures](./comp282/)
 - [MATH 262: Linear Algebra](./math262/)
 - [PHYS 220B: Electricity and Magnetism](./phys220b/)
