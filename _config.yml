@@ -25,6 +25,7 @@ description: A collection of notes from my college studies
 theme: jekyll-theme-dinky
 plugins:
   - jekyll-relative-links
+  - jekyll-katex
 relative_links:
   enabled: true
   collections: true
