@@ -4,3 +4,5 @@
 - [9/7/21: Quiz #0 Review](notes/9-7.html)
 - [9/9/21: MIPS / MARS](notes/9-9.html)
 - [9/14/21: MIPS / MARS cont.](notes/9-14.html)
+- [9/16/21: RISC V](notes/9-16.html)
+- [9/21/21: ARM](notes/9-21.html)
