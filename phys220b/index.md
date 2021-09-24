@@ -5,4 +5,4 @@
 - [9/13/21: Electric Field](notes/9-13.html)
 - [9/15/21: Continuous Charge Distribution + Dipoles](notes/9-15.html)
 - [9/20/21: Gauss's Law and Electric Flux](notes/9-20.html)
-- [9/22/21: Gauss's Law and Electric Flux](notes/9-22.html)
+- [9/22/21: Gauss's Law cont.](notes/9-22.html)
