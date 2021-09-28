@@ -6,3 +6,4 @@
 - [9/15/21: Solutions of Linear Systems: Linear Combinations](notes/9-15.html)
 - [9/20/21: Linear Transformations](notes/9-20.html)
 - [9/22/21: Linear Transformations cont.](notes/9-22.html)
+- [9/27/21: Matrix Algebra](notes/9-27.html)
