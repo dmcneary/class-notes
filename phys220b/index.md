@@ -7,3 +7,4 @@
 - [9/20/21: Gauss's Law and Electric Flux](notes/9-20.html)
 - [9/22/21: Gauss's Law cont.](notes/9-22.html)
 - [9/27/21: Electric Potential Energy](notes/9-27.html)
+- [9/29/21: Electric Potential Energy cont.](notes/9-29.html)
