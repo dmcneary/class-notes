@@ -7,3 +7,7 @@
 - [9/20/21: Linear Transformations](notes/9-20.html)
 - [9/22/21: Linear Transformations cont.](notes/9-22.html)
 - [9/27/21: Matrix Algebra](notes/9-27.html)
+- [9/29/21: Invertible Linear Transformations](notes/9-29.html)
+- 10/6/21: Image and Kernel of Linear Transformations
+- 10/11/21: Subspaces
+- 10/13/21: Dimensions of Subspaces

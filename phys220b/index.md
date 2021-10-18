@@ -8,3 +8,12 @@
 - [9/22/21: Gauss's Law cont.](notes/9-22.html)
 - [9/27/21: Electric Potential Energy](notes/9-27.html)
 - [9/29/21: Electric Potential Energy cont.](notes/9-29.html)
+- 10/4/21: Electric Potential vs Potential Energy
+- [10/6/21: Electric Potential vs Potential Energy cont.](notes/10-6.html)
+- 10/11/21: Exam 1 review
+- [10/18/21: Capacitors](notes/10-18.html)
+
+### Lab Reports
+- [Wheatstone Bridge](labs/lab-4/lab-4.md)
+- [Slide Wire Potentiometer](labs/lab-5/lab-5.md)
+  - [JavaScript Calculation Code](labs/lab-5/calc.js)
