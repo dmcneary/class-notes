@@ -9,6 +9,7 @@ This Github Pages site is here to host my notes for various college classes I've
 - [COMP 222: Computer Organization](./comp222/)
 - [COMP 256: Discrete Structures](./comp256/)
 - [COMP 282: Advanced Data Structures](./comp282/)
+- [COMP 322: Operating Systems](./comp322/)
 - [COMP 380: Introduction to Software Engineering](./comp380)
 - [MATH 262: Linear Algebra](./math262/)
 - [MUS 306: Introduction to Jazz](./mus306/)
