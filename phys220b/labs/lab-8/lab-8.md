@@ -72,6 +72,6 @@ $f_{calc} = 3310\text{Hz}, \\
 
 ## Data sheet + Quiz
 
-![](./quiz.jpg)
+![](./images/quiz.jpg)
 
-![](./data.jpg)
+![](./images/data.jpg)

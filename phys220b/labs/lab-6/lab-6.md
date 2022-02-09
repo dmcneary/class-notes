@@ -29,8 +29,8 @@ PHYS 200BL
 | $130\text{ s}$ | $0.09\text{ V}$ | $0.69\text{ V}$ | $1.69\text{ V}$ | $0.06\text{ V}$ | 
 | $140\text{ s}$ | $0.07\text{ V}$ | $0.60\text{ V}$ | $1.50\text{ V}$ | $0.06\text{ V}$ | 
 
-![Voltage as a function of time (V(s))](./graph-1.png)
-![Semi-log analysis](./graph-2.png)
+![Voltage as a function of time (V(s))](./images/graph-1.png)
+![Semi-log analysis](./images/graph-2.png)
 
 Extracted values for time constant $\tau$:
 - $C_1: 28.2$ seconds
@@ -58,6 +58,6 @@ b. The experiment would take many orders of magnitude more time to complete, wit
 --- 
 
 ## Data sheet + Quiz
-![](./data-1.jpg)
-![](./data-2.jpg)
-![](./quiz.jpg)
+![](./images/data-1.jpg)
+![](./images/data-2.jpg)
+![](./images/quiz.jpg)

@@ -33,9 +33,9 @@ The values of the period T compared to the voltage V remain fairly constant: the
 | $3000 \text{ Hz}$ | $4800 \text{Hz}$ | $1.2\text{ rad}$ | $0.90\text{ rad}$ | $1.05\text{ rad}$ | $1.74$ |
 | $4000 \text{ Hz}$ | $7100 \text{Hz}$ | $1.2\text{ rad}$ | $0.67\text{ rad}$ | $0.94\text{ rad}$ | $1.37$ |
 | $5000 \text{ Hz}$ | $8700 \text{Hz}$ | $1.1\text{ rad}$ | $0.55\text{ rad}$ | $0.83\text{ rad}$ | $1.09$ |
-![](./graph.png)
+![](./images/graph.png)
 From slope: $RC = 1.33\times 10^{-5} \text{ seconds}$
 From given values: $RC = 5.94\times 10^{-5} \text{ seconds}$
 ## Data sheet + Quiz
-<img src="data.jpg" height=40% />
-<img src="quiz.jpg" height=40% />
+<img src="./images/data.jpg" height=40% />
+<img src="./images/quiz.jpg" height=40% />

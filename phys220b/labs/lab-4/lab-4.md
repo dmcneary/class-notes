@@ -65,5 +65,5 @@ $$ 100\Bigg[\frac{\vert30\Omega - 59.8\Omega\vert}{\frac{30\Omega + 59.8\Omega}{
 --- 
 
 ## Data sheet + Quiz
-![](./quiz.jpg)
-![](./data-sheet.jpg)
+![](./images/quiz.jpg)
+![](./images/data-sheet.jpg)

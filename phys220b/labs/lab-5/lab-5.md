@@ -80,5 +80,5 @@ These values are not the same as the values calculated using the experimental me
 --- 
 
 ## Data sheet + Quiz
-![](./quiz.jpg)
-![](./data.jpg)
+![](./images/quiz.jpg)
+![](./images/data.jpg)
