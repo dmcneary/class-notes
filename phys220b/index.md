@@ -14,6 +14,13 @@
 - [10/18/21: Capacitors](notes/10-18.html)
 
 ### Lab Reports
-- [Wheatstone Bridge](labs/lab-4/lab-4.md)
-- [Slide Wire Potentiometer](labs/lab-5/lab-5.md)
+- [Wheatstone Bridge](labs/lab-4/lab-4.html)
+- [Slide Wire Potentiometer](labs/lab-5/lab-5.html)
   - [JavaScript Calculation Code](labs/lab-5/calc.js)
+- [RC Circuit Discharge](labs/lab-6/lab-6.html)
+  - [JavaScript Calculation Code](labs/lab-6/calc.js)
+- [Oscilloscope](labs/lab-7/lab-7.html)
+- [Simple AC Circuits: Reactance and Impedance](labs/lab-8/lab-8.html)
+- [Measurement of Earth's Magnetic Field](labs/lab-10/lab-10.html)
+- [Electron Acceleration and Deflection by Electrostatic Fields](labs/lab-11/lab-11.html)
+- [Electron Orbit in Magnetic Field and the e/m Ratio](labs/lab-12/lab-12.html)

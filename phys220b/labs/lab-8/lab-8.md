@@ -1,5 +1,5 @@
 ### Lab Experiment #8:
-# Simple AC Circuits: Reactance and impedance
+# Simple AC Circuits: Reactance and Impedance
 David McNeary 
 Partner: Glendy Lara
 PHYS 220BL 
