@@ -9,6 +9,9 @@ each choice calls the appropriate procedure, where the choices are:
 4) Quit program and free memory */
 
 /* Define structures and global variables */
+
+// TODO: main
+
 int n;
 
 struct node {
@@ -22,7 +25,7 @@ typedef struct node list_type;
 struct pcb {
     int parent;
     list_type* children;
-}*pcb_array = null;
+}*pcb_array = NULL;
 
 typedef struct pcb pcb_type;
 
@@ -31,25 +34,36 @@ typedef struct pcb pcb_type;
 void print_pcbs() {
     /* declare local vars */
     int i;
+    list_type* child;
 
     /* for each PCB index i from 0 up to (but not including) maximum number*/
     for (i = 0; i < n; i++) {
 
         /* check if PCB[i] has a parent and children */
-        if (pcb_array[i].parent > -1) {
-
+        if ( (pcb_array[i].parent > -1) && (pcb_array[i] != NULL) ) {
             /* print message about children of the current PCB[i] */
 
-            /* intilize variable to head of list of 
-            children */
-                while () { /* while the end of the linked list of children is not reached */ 
-                /* print message about current child 
-                process index */
+            /* initialize variable to head of list of children */
+            child = pcb_array[i].children;
+
+            /* while the end of the linked list of children is not reached */ 
+            while (child != NULL) { 
+                /* print message about current child process index */
+                printf("Process %d is the parent of Process %d\n", pcb_array[i].parent, child->process_id);
+                
                 /* move to next node in linked list */
-                } /* while */
+                child = child->link;
+            } /* while */
+
             /* print newline */
+            printf("\n");
+
         }/* if */
+
     } /* for */
+
+    return;
+
 } /* end of procedure */
 
 /***************************************************************/
@@ -96,14 +110,14 @@ void create_child() {
         i++;
     }
     if (i == n) {
-        printf("Memory limit: process cannot be created.");
-        printf("Destroy an existing process to create a new process.");
+        printf("Memory limit: process cannot be created.\n");
+        printf("Destroy an existing process to create a new process.\n");
         return;
     }
     /* allocate memory for new child process, initilize fields */
     child = (list_type*)malloc(sizeof(ListNode));
-    child -> process_id = i;
-    child -> link = NULL;
+    child->process_id = i;
+    child->link = NULL;
 
     /* record the parent's index p in PCB[q] */
     pcb_array[q].parent = p;
@@ -119,7 +133,7 @@ void create_child() {
         while(curr.link != NULL) {
             curr = curr.link;
         }
-        curr -> link = child;
+        curr.link = child;
     }
     /* call procedure to print current hierachy of processes */
     print_pcbs();
@@ -128,43 +142,76 @@ void create_child() {
 
 /***************************************************************/
 
-void kill_process(parameter) {
+void kill_process(list_type* node) {
     /* declare local vars */
-    if () {
-        /* check if end of linked list--if so return */
+    int q;
+
+    /* check if end of linked list--if so return */
+    if (node == NULL) {
+        return;
     } else {
         /* else call self on next node in linked list */
-        /* set variable q to current node's process index field 
-        */
-        /* call self on children of PCB[q] */ 
-        /* free memory of paramter */
+        kill_process(node->link);
+
+        /* set variable q to current node's process index field */
+        q = node->process_id;
+
+        /* call self on children of PCB[q] */
+        kill_process(pcb_array[q].children);
+
+        /* free memory of parameter */
+        free(node);
+
         /* reset parent of PCB[q] to -1 */
-        /* set paramter to NULL */
+        pcb_array[q].parent = -1;
+
+        /* set parameter to NULL */
+        node = NULL;
+
     } /* end of else */
+
     return;
+
 } /* end of procedure */
 
 /***************************************************************/
 
 void destroy_descendants() {
     /* declare local vars */
-    /* prompt for process index p */
+    int p;
+
+    /* prompt for parent process index p */
+    printf("Enter the parent process ID: ");
+    scanf("%d", &p);
+
     /* call recursive procedure to destroy children of PCB[p] */
+    kill_process(pcb_array[p].children);
+
     /* reset children of PCB[p] to NULL */
+    pcb_array[p].children = NULL;
+
     /* call procedure to print current hierarchy of processes */
+    print_pcbs();
+
     return;
 } /* end of procedure */
 
 /***************************************************************/
 
 void exit_program() {
-    /* check if PCB is non null)
-    /* check if children of PCB[0] is not null */
-    /* call recursive procedure to destroy 
-    children of PCB[0] */
+    /* check if PCB is non null) */
+    if (pcb_array == NULL) {
+        printf("Error: PCB array doesn't exist.\n");
+        return;
+    } else {
+        /* check if children of PCB[0] is not null */
+        /* call recursive procedure to destroy children of PCB[0] */
+        kill_process(pcb_array[0].children);
+        /* free memory of PCB */
+        free(pcb_array);
+        printf("Process 0 destroyed.\n");
     } /* if */
-    /* free memory of PCB */
-    } /* if */
+
     return;
 } /* end of procedure */
 
@@ -172,11 +219,26 @@ void exit_program() {
 
 int main() {
     /* declare local vars */
+    int input = 0;
+
     /* while user has not chosen to quit */
-    /* print menu of options */
-    /* prompt for menu selection */
-    /* call appropriate procedure based on choice--use switch 
-    statement or series of if, else if, else statements */
+    while (input != 4) {
+        /* print menu of options */
+        printf();
+        /* prompt for menu selection */
+        printf("Enter selection: ");
+        scanf("%d", &input);
+        /* call appropriate procedure based on choice--use switch 
+        statement or series of if, else if, else statements */
+        switch (input) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            default: printf("Invalid entry, please try again...");
+        }
     } /* while loop */
+
     return 1; /* indicates success */
+
 } /* end of procedure */
