@@ -4,3 +4,6 @@
 - [1/31/2022 - The Software Process cont](notes/1-31.html)
 - [2/2/2022 - RAD and Agile](notes/2-2.html)
 - [2/7/2022 - Extreme Programming and Scrum](notes/2-7.html)
+- [2/9/2022 - Requirements Engineering](notes/2-9.html)
+- [2/14/2022 - Requirements Modeling](notes/2-14.html)
+- [2/16/2022 - Requirements Modeling cont.](notes/2-16.html)

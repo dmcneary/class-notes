@@ -86,7 +86,7 @@ void input_params() {
     /* for-loop to intitialize all other indices' parent to -1 */
     for (i = 1; i < n; i++) {
         pcb_array[i].parent = -1;
-        pcb_array.children = NULL;
+        pcb_array[i].children = NULL;
     }
     return;
 } /* end of procedure */
@@ -115,12 +115,12 @@ void create_child() {
         return;
     }
     /* allocate memory for new child process, initilize fields */
-    child = (list_type*)malloc(sizeof(ListNode));
+    child = (list_type*)malloc(sizeof(list_type));
     child->process_id = i;
     child->link = NULL;
 
     /* record the parent's index p in PCB[q] */
-    pcb_array[q].parent = p;
+    pcb_array[i].parent = p;
 
     /* initialize the list of children of PCB[q] as empty */
     /* create a new link containing the child's index q and append the 
