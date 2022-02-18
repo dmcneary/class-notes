@@ -5,3 +5,4 @@
 - [2/8/2022 - Scheduling](notes/2-8.html)
 - [2/10/2022 - Scheduling cont.](notes/2-10.html)
 - [2/15/2022 - Scheduling cont.](notes/2-15.html)
+- [2/17/2022 - Intro to Concurrency + Semaphores](notes/2-17.md)
