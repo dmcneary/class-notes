@@ -7,3 +7,4 @@
 - [2/9/2022 - Early Jazz: Louis Armstrong + Papa Joe](notes/2-9.html)
 - [2/14/2022 - Early Jazz: Armstrong's Hot 5](notes/2-14.html)
 - [2/16/2022 - Early Jazz: Jelly Roll + others](notes/2-16.html)
+- [2/21/2022 - Whiteman Alumni + Stride Piano](notes/2-21.md)
