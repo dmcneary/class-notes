@@ -1,17 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+David McNeary
+COMP 322L Section 7799
+Assignment #1
+2/21/2022
 
-/* The program creates/destroys child processes based on choosing from a menu of choices, where
+The program creates/destroys child processes based on choosing from a menu of choices, where
 each choice calls the appropriate procedure, where the choices are:
 1) Enter parameters
 2) Create a new child process
 3) Destroy all descendants of a process
-4) Quit program and free memory */
+4) Quit program and free memory 
+*/
 
 /***************************************************************/
 
 /* Define structures and global variables */
-
 int n;
 int initialized = 0;
 
@@ -98,7 +103,7 @@ void input_params() {
         pcb_array[i].children = NULL;
     }
 
-    printf("New 1st ancestor created.\n");
+    printf("New 1st ancestor created - process 0\n");
     printf("Memory remaining: %d\n", n - 1);
 
     return;
@@ -153,7 +158,7 @@ void create_child() {
         curr->link = child;
     }
     /* call procedure to print current hierachy of processes */
-    printf("New process created: Process %d\n", i);
+    printf("New process created: Process %d (parent: Process %d)\n", i, p);
     printf("Memory remaining: %d\n", n - i - 1);
     print_pcbs();
     return;
@@ -241,6 +246,8 @@ void exit_program() {
         free(pcb_array);
         printf("Process 0 destroyed.\n");
     } /* if */
+    
+    printf("Exiting program...");
 
     return;
 
@@ -257,7 +264,7 @@ int main() {
     while (input != 4) {
         /* print menu of options */
         printf("\nPlease choose from the following:\n");
-        printf("1) Initialize process tree\n");
+        printf("1) Enter parameters\n");
         printf("2) Create a new child process\n");
         printf("3) Destroy all descendants of a process\n");
         printf("4) Quit program and free memory\n");
