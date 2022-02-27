@@ -7,3 +7,5 @@
 - [2/9/2022 - Requirements Engineering](notes/2-9.html)
 - [2/14/2022 - Requirements Modeling](notes/2-14.html)
 - [2/16/2022 - Requirements Modeling cont.](notes/2-16.html)
+- [2/21/2022 - UML Diagrams](notes/2-21.html)
+- [2/23/2022 - ](notes/2023.html)
