@@ -8,4 +8,5 @@
 - [2/14/2022 - Early Jazz: Armstrong's Hot 5](notes/2-14.html)
 - [2/16/2022 - Early Jazz: Jelly Roll + others](notes/2-16.html)
 - [2/21/2022 - Whiteman Alumni + Stride Piano](notes/2-21.html)
-- [2/23/2022 - More Pianists + 1920's Jazz Culture](notes/2-23.html)
+- [2/23/2022 - Fats Waller + Boogie Woogie](notes/2-23.html)
+- [3/2/2022 - The Swing Era](notes/3-2.html)

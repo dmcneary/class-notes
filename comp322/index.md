@@ -6,4 +6,3 @@
 - [2/10/2022 - Scheduling cont.](notes/2-10.html)
 - [2/15/2022 - Scheduling cont.](notes/2-15.html)
 - [2/17/2022 - Concurrency, Synchronization, and Semaphores](notes/2-17.html)
-- [2/22/2022 - Midterm Review](notes/2-22.html)
