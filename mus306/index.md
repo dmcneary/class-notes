@@ -10,3 +10,4 @@
 - [2/21/2022 - Whiteman Alumni + Stride Piano](notes/2-21.html)
 - [2/23/2022 - Fats Waller + Boogie Woogie](notes/2-23.html)
 - [3/2/2022 - The Swing Era](notes/3-2.html)
+- [3/7/202 - Musicians of the Swing Era](notes/3-7.html)
