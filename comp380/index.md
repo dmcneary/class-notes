@@ -10,4 +10,6 @@
 - [2/21/2022 - UML Diagrams](notes/2-21.html)
 - [2/23/2022 - Object Relations](notes/2-23.html)
 - [2/28/2022 - Architecture Design, Cohesion & Coupling](notes/2-28.html)
-- [3/2/2022 - ](notes/3-2.html)
+- [3/2/2022 - Design Concepts](notes/3-2.html)
+- [3/7/2022 - Design Patterns](notes/3-7.html)
+- [3/9/2022 - Design Patterns cont.](notes/3-9.html)
