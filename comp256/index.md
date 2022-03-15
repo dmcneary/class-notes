@@ -7,3 +7,7 @@
 - [2/15/2022 - Summations and Loops](notes/2-15.html)
 - [2/17/2022 - Summations and Loops cont. + Intro to Proofs](notes/2-17.html)
 - [2/22/2022 - Proofs cont.](notes/2-22.html)
+- [3/3/2022 - Proof by Induction](notes/3-3.html)
+- [3/8/2022 - Basics of Counting](notes/3-8.html)
+- [3/10/2022 - ](notes/3-10.html)
+- [3/15/2022 - ]
