@@ -151,19 +151,21 @@ void enter_params() {
             //update maxclaim and need arrays
             scanf("%d", &units);
             maximum[i*nr+j] = units;
-            need[i*nr+j] = units;
+            need[i*nr+j] -= units;
+            available[j] -= units;
         }
         
     }
-    // for each process, for each resource, prompt for number of resource units allocated to process
+    // for each process
     for (int i = 0; i < np; i++) {// for each process
-        // prompt for maximum number of units requested by process
+        // prompt for number of resource units allocated to process
         printf("Enter max units process p%d will request from each resource (r0 to r%d)", i, nr);
+        // for each resource,
         for (int j = 0; j < nr; j++) {// for each resource
-            //update maxclaim and need arrays
+            // update allocated units
             scanf("%d", &units);
             allocated[i*nr+j] = units;
-            [i*nr+j] = units;
+            need[i*nr+j] = units;
         }
         
     }
@@ -173,31 +175,94 @@ void enter_params() {
 //******************************************************************
 void bankers_algo() {
     // declare local variables, including vector to indicate if process is safely sequenced and "num_sequenced" count
+    int *done = (int *)calloc(np, sizeof(int));
+    int ns = 0;
+    int res_avail;
+    int not_dead = 1;
+    
     // while not all processes are processed
-    // for each process
-    // if process has not been processed yet 
-    // print message comparing need vector with available vector
-    // for each resource
-    // check for safe processing by comparing process' need vector to available vector
-        // if each resource is available
-    // print message that process can be processed
-    // update number of available units of resource
-    // for each resourcefree all resources allocated to process
-    // increment number of sequenced processes
-    // else print message that process cannot be processed
+    while ((ns < np) && not_dead) {
+        //put not_dead here?
+
+        // for each process
+        for (int i = 0; i < np; i++) {
+            // reset flags
+            not_dead = 0;
+            res_avail = 1;
+
+            // if process has not been processed yet
+            if (done[i] == 0) {
+                // print message comparing need vector with available vector
+                printf("Comparing: <");
+                for (int j = 0; j < nr; j++) {
+                    printf(" %d ", need[i*nr+j]);
+                }
+                printf("> <= <");
+                for (int j = 0; j < nr; j++) {
+                    printf(" %d ", available[j]);
+                }
+                printf("> : ");
+
+                // for each resource
+                for (int j = 0; j < nr; j++) {
+                    // check for safe processing by comparing process' need vector to available vector
+                    res_avail &= need[i*nr+j] <= available[j];
+                }
+                
+                // if each resource is available
+                if (res_avail) {
+                    not_dead = 1;
+
+                    // print message that process can be processed
+                    printf("Yes --> p%d can be processed.\n", i);
+                    
+                    // for each resource
+                    for (int j = 0; j < nr; j++) {
+                        // update number of available units of resource
+                        available[j] += allocated[i*nr+j];
+
+                        // free all resources allocated to process
+                        allocated[i*nr+j] = 0;
+                    }
+                        
+                    // increment number of sequenced processes
+                    ns++;
+                } else {
+                    // else print message that process cannot be processed
+                    printf("No --> p%d can not be processed.\n", i);
+                }    
+            }
+        }
+    }
     //if (no process was processed in the final round of the for-loop)
-    // print message of deadlock among processes not processed
+    if (ns < np) {
+        // print message of deadlock among processes not processed
+        printf("Deadlock among processes:");
+        for (int i = 0; i < np; i++) {
+            if (!done[i]) {
+                printf(" p%d ", i);
+            }
+        }
+    }
+    
     return;
 }
 //******************************************************************
 void quit_program() {
     // check if vectors/array are not NULL--if so, free each vector/array );
-return;
+    if (resource != NULL) {
+        free(resource);
+    }
+
+    free(available);
+    
+    return;
 }
 //*************************************************************
 int main() {
     // declare local vars
-    while(0){// while user has not chosen to quit
+    int input = 0;
+    while (input != 3) {// while user has not chosen to quit
         // print menu of options
         // prompt for menu selection
         // call appropriate procedure based on choice--use switch statement or series of if, else if, else statements 
