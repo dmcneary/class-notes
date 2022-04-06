@@ -10,4 +10,10 @@
 - [2/21/2022 - Whiteman Alumni + Stride Piano](notes/2-21.html)
 - [2/23/2022 - Fats Waller + Boogie Woogie](notes/2-23.html)
 - [3/2/2022 - The Swing Era](notes/3-2.html)
-- [3/7/202 - Musicians of the Swing Era](notes/3-7.html)
+- [3/7/2022 - Musicians of the Swing Era](notes/3-7.html)
+- 3/9/2022 - Library Seminar
+- [3/14/2022 - Swing Musicians cont.](notes/3-14.html)
+- [3/16/2022 - Duke Ellington](notes/3-16.html)
+- [3/28/2022 - Duke Ellington Orchestra + Chick Webb Band](notes/3-28.html)
+- [3/30/2022 - Late Swing Artists](notes/3-30.html)
+- [4/4/2022 - Intro to Bebop](notes/4-4.html)

@@ -13,3 +13,7 @@
 - [3/2/2022 - Design Concepts](notes/3-2.html)
 - [3/7/2022 - Design Patterns](notes/3-7.html)
 - [3/9/2022 - Design Patterns cont.](notes/3-9.html)
+- [3/16/2022 - Project Management](notes/3-16.html)
+- [3/28/2022 - Project Planning](notes/3-28.html)
+- [3/30/2022 - Implementation and Integration](notes/4-4.html)
+- [4/4/2022 - Integration Strategies](notes/4-4.html)
