@@ -17,3 +17,5 @@
 - [3/28/2022 - Duke Ellington Orchestra + Chick Webb Band](notes/3-28.html)
 - [3/30/2022 - Late Swing Artists](notes/3-30.html)
 - [4/4/2022 - Intro to Bebop](notes/4-4.html)
+- [4/11/2022 - Bebop into Cool Jazz](notes/4-11.html)
+- [4/13/2022 - Cool Jazz cont.](notes/4-13.html)
