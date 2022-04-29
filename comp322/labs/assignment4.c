@@ -138,6 +138,8 @@ void first_fit() {
 	// if end of list reached, print message no fitting hole
 	printf("Error: Not enough memory available.\n");
 	free(new_block);
+	
+	print_blocks();
   	return;
 
 }
@@ -279,19 +281,22 @@ void deallocate() {
 
 /********************************************************************/
 
-void defrag() {
+void defrag_mem() {
 
 	// declare/initialize local variables
 	// initialize "current block"
 	block_type* curr = head;
-	
+
 	// while end of block list not reached
-	while (curr != NULL) {
+	while (curr->link != NULL) {
 		// adjust start and end fields of each block, compacting together
-		curr->link->start = curr->end;
+		int newStart = curr->end;
+		int newEnd = curr->link->end - (curr->link->start - curr->end);
+		curr->link->start = newStart;
+		curr->link->end = newEnd; 
 		curr = curr->link;
 	}
-	
+
 	print_blocks();
 	return;
 
@@ -300,8 +305,6 @@ void defrag() {
 //******************************************************************
 
 void quit_program(block_type *node) {
-
-    printf("\nQuitting program...\n");
 
 	// if node is NULL return
 	if (node == NULL) return;
@@ -334,7 +337,7 @@ int main() {
 		printf("5) Defragment memory\n");
 		printf("6) Quit program and free memory\n");
         /* prompt for menu selection */
-        printf("\nEnter selection: ");
+        printf("\nEnter selection: \n");
         scanf("%d", &input);
 
         // call appropriate procedure based on choice
@@ -344,8 +347,8 @@ int main() {
             case 2: first_fit(); break;
             case 3: best_fit(); break;
 			case 4: deallocate(); break;
-			case 5: defrag(); break;
-			case 6: quit_program(head); break;
+			case 5: defrag_mem(); break;
+			case 6: printf("\nQuitting program...\n"); quit_program(head); break;
             default: printf("Invalid entry, please try again...\n");
         }
 
