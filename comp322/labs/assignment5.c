@@ -21,7 +21,7 @@ void enter_params() {
 
 	// prompt for the sequence size
     printf("Enter size of sequence: \n");
-    scanf("%d", seq_size);
+    scanf("%d", &seq_size);
 
 	// allocate memory for the sequence of traversed tracks
     sequence = (int *)malloc(seq_size * sizeof(int));
@@ -56,7 +56,7 @@ void fifo() {
     printf("Traversed sequence: ");
 	// print sequence of traversal
     for (i = 0; i < seq_size; i++) {
-        printf("%d ", &sequence[i]);
+        printf("%d ", sequence[i]);
     }
 
 	// print total distance of tracks traversed
@@ -71,15 +71,15 @@ void fifo() {
 void sstf() {
 
 	// declare local variables
-    int num_done = 0;
+    int num_done = 1;
     int shortest, shortest_i;
     int* done = (int *)calloc(seq_size, sizeof(int));
 
 	// initialize current track and distance traversed to starting track
-    int count = sequence[0], current = count;;
+    int count = sequence[0], current = count;
 
 	// begin printing sequence of traversal 
-    printf("Traversed sequence: %d", current);
+    printf("Traversed sequence: %d ", current);
 
 	// until every track is traversed
     while (num_done < seq_size) {
@@ -111,7 +111,7 @@ void sstf() {
 
 		//set current track to new position, print position
         current = sequence[shortest_i];
-        printf("%d", current);
+        printf("%d ", current);
     }
 
   	// print total distance traversed
@@ -126,40 +126,76 @@ void sstf() {
 void reg_scan() {
 
 	// declare local variables
+	int dir = -1;
+	int num_done = 1;
+    int shortest, shortest_i, traversed;
+    int* done = (int *)calloc(seq_size, sizeof(int));
 
-	//prompt for initial direction (0=descreasing, 1=increasing)
+	// prompt for initial direction (0=decreasing, 1=increasing)
+	while (dir < 0) {
+		printf("Enter initial direction: (0=decreasing, 1=increasing): \n");
+		scanf("%d", &dir);
+
+		if (dir < 0 || dir > 1) {
+			dir = -1;
+			printf("Invalid entry, please try again... \n");
+		}
+	}
 	
 	// initialize current track and distance traversed to starting track
+	int count = sequence[0], current = count;
 
 	// begin printing sequence of traversal 
+	printf("Traversed sequence: %d ", current);
 
 	// until every track is traversed
-
+	while (num_done < seq_size) {
 		// initilize shortest distance to INT_MAX
+		shortest = INT_MAX;
+		traversed = 0;
 
 		// for each track in sequence
-
+		int i;
+        for (i = 1; i < seq_size; i++) {
 			// if not already traversed
-
+			if (done[i] == 0) {
 				//if distance to traverse is shorter than current shortest distance in the current direction
-
-					// set current shortest distance and index of the track	w/ shortest distance
-
+				if ( abs(sequence[i] - current) < shortest ) {
+					if ( ((sequence[i] > current) && (dir == 1)) ||
+						 ((sequence[i] < current) && (dir == 0)) ) {
+						// set current shortest distance and index of the track	w/ shortest distance
+						shortest = abs(sequence[i] - current);
+                    	shortest_i = i;
      					// set flag that at least one track was traversed
+						traversed = 1;
+					}
+				}
+			}
+		}
 
 		// if at least one track was traversed
-
-    			// set "done" value for track w/shortest distance to 1 (mark as traversed)
+		if (traversed == 1) {
+    		// set "done" value for track w/shortest distance to 1 (mark as traversed)
+			done[shortest_i] = 1;
 
 			// increment number of traversed tracks
+			num_done++;
 
 			// update total distance traversed
+			count += shortest;
 
 			//set current track to new position, print position
-
+			current = sequence[shortest_i];
+        	printf("%d ", current);
+		}
 		// else change direction
+		else {
+			dir = (dir = 0) ? 1 : 0;
+		}
+	}
 
  	// print total distance traversed
+	printf("\nThe distance of the traversed tracks is: %d\n", count);
 
 	return;
 
@@ -170,53 +206,82 @@ void reg_scan() {
 void c_scan() {
 
 	// declare local variables
+	int num_done = 1;
+    int shortest, shortest_i, traversed, top = 0;
+    int* done = (int *)calloc(seq_size, sizeof(int));
 
 	// initialize current track and number traversed to starting track
-
+	int count = sequence[0], current = count;
+    
 	// begin printing sequence of traversal 
+	printf("Traversed sequence: %d ", current);
 
 	// until every track is traversed
-
+	while (num_done < seq_size) {
 		// initilize shortest distance to INT_MAX
+		shortest = INT_MAX;
+		traversed = 0;
 
 		// for each track in sequence
-
+		int i;
+        for (i = 1; i < seq_size; i++) {
 			// if not already traversed
-
+			if (done[i] == 0) {
 				//if distance to traverse is shorter than current shortest distance and a positive value (only increasing direction)
-
-					// set current shortest distance and index of the track	w/ shortest distance
-
+				if ( (sequence[i] - current) < shortest ) {
+					if (sequence[i] > current) {
+						// set current shortest distance and index of the track	w/ shortest distance
+						shortest = sequence[i] - current;
+                    	shortest_i = i;
      					// set flag that at least one track was traversed
+						traversed = 1;
+					}
+				}
+			}
+		}
 
 		// if at least one track was traversed
-
-    			// set "done" value for track w/shortest distance to 1 (mark as traversed)
+		if (traversed == 1) {
+    		// set "done" value for track w/shortest distance to 1 (mark as traversed)
+			done[shortest_i] = 1;
 
 			// increment number of tracks that have been traversed
+			num_done++;
 
 			// if largest track was reached
-
-				// update total distance traversed by derementing by distance to track (subtracts distance from 0 to track)
+			if (top == 1) {
+				// update total distance traversed by decrementing by distance to track (subtracts distance from 0 to track)
+				count -= shortest;
 
 				// reset "largest track" flag
-
+				top = 0;
+			}
 			// else
-	
+			else {
 				// update total distance traversed by distance to track
+				count += shortest;
+			}
 
 			//set current track to new position, print position
-
+			current = sequence[shortest_i];
+        	printf("%d ", current);
+		}
 		// else (no track was traversed)
-
+		else {
 			// update total distance by current track (adds remaining distance before going back to 0)
-		
+			count += current;
+
 			// reset current track to 0 (loop back around)
+			current = 0;
 
-			// set "end reached" flag to 1
-
+			// set "top reached" flag to 1
+			top = 1;
+		}
+	}
+	
  	// print total distance traversed
-
+	printf("\nThe distance of the traversed tracks is: %d\n", count);
+	
 	return;    
 
 } // "OPTION #5
@@ -275,4 +340,4 @@ int main() {
 
 	return 1; // indicates success 
 
-} // main	
+}	
