@@ -13,4 +13,4 @@
 - [Monday July 19 - Semantics for Predicate Logic](notes/7-19.md)
 - [Tuesday July 20 - Proving Invalidity in Predicate Logic](philos9/notes/7-20.md)
 - [Thursday July 22 - Natural Deduction in Predicate Logic](notes/7-22.md)
-- [Thursday July 22 - Natural Deduction in Predicate Logic pt 2](notes/7-26.md)
+- [Thursday July 22 - Natural Deduction in Predicate Logic pt 2](philos9/notes/7-26.md)
