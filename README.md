@@ -1,5 +1,5 @@
 ## Class Notes
-This repository was created to store my notes from my college classes. I started writing notes using Visual Studio Code during the Summer 2021 term at Santa Monica College for Prof. Paul Klumpe's Symbolic Logic class, and found that this method allowed me to share my notes with classmates in a clean, easy way while giving me the opportunity to dive into markup languages such as markdown and LaTeX, as well as being able to publish code for lab classes (just MATLAB so far).
+This repository was created to store my notes from my college classes. I started writing notes using Visual Studio Code during the Summer 2021 term at Santa Monica College for Prof. Paul Klumpe's Symbolic Logic class, and found that this method allowed me to share my notes with classmates in a clean, easy way while giving me the opportunity to dive into markup languages such as markdown and LaTeX, as well as being able to publish code for labs and projects.
 
 From Github Pages generated README:
 
