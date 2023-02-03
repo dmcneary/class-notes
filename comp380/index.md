@@ -1,7 +1,7 @@
 ## COMP 380 - Introduction to Software Engineering
-- [1/24/2022 - Syllabus + Introduction](notes/1-24)
-- [1/26/2022 - The Software Process](notes/1-26)
-- [1/31/2022 - The Software Process cont](notes/1-31)
+- [1/24/2022 - Syllabus + Introduction](comp380/notes/1-24.md)
+- [1/26/2022 - The Software Process](comp380/notes/1-26.md)
+- [1/31/2022 - The Software Process cont](comp380/notes/1-31.md)
 - [2/2/2022 - RAD and Agile](notes/2-2)
 - [2/7/2022 - Extreme Programming and Scrum](notes/2-7)
 - [2/9/2022 - Requirements Engineering](notes/2-9)

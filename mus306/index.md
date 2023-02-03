@@ -1,7 +1,7 @@
 ## MUS 306 - Introduction to Jazz
-- [1/24/2022 - Syllabus + Beginnings of Jazz + Blues](notes/1-24)
-- [1/26/2022 - Blues cont.](notes/1-26)
-- [1/31/2022 - Ragtime and Marching/Concert Band](notes/1-31)
+- [1/24/2022 - Syllabus + Beginnings of Jazz + Blues](mus306/notes/1-24.md)
+- [1/26/2022 - Blues cont.](mus306/notes/1-26.md)
+- [1/31/2022 - Ragtime and Marching/Concert Band](mus306/notes/1-31.md)
 - [2/2/2022 - Characteristics of Jazz](notes/2-2)
 - [2/7/2022 - Early Jazz Principles](notes/2-7)
 - [2/9/2022 - Early Jazz: Louis Armstrong + Papa Joe](notes/2-9)
