@@ -3,7 +3,7 @@
 - [1/26/2022 - The Software Process](comp380/notes/1-26.md)
 - [1/31/2022 - The Software Process cont](comp380/notes/1-31.md)
 - [2/2/2022 - RAD and Agile](notes/2-2)
-- [2/7/2022 - Extreme Programming and Scrum](notes/2-7)
+- [2/7/2022 - Extreme Programming and Scrum](comp380/notes/2-7.md)
 - [2/9/2022 - Requirements Engineering](notes/2-9)
 - [2/14/2022 - Requirements Modeling](notes/2-14)
 - [2/16/2022 - Requirements Modeling cont.](notes/2-16)
