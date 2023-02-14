@@ -5,7 +5,7 @@
 - [2/2/2022 - RAD and Agile](notes/2-2)
 - [2/7/2022 - Extreme Programming and Scrum](comp380/notes/2-7.md)
 - [2/9/2022 - Requirements Engineering](notes/2-9)
-- [2/14/2022 - Requirements Modeling](notes/2-14)
+- [2/14/2022 - Requirements Modeling](comp380/notes/2-14.md)
 - [2/16/2022 - Requirements Modeling cont.](notes/2-16)
 - [2/21/2022 - UML Diagrams](notes/2-21)
 - [2/23/2022 - Object Relations](notes/2-23)

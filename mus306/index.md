@@ -5,7 +5,7 @@
 - [2/2/2022 - Characteristics of Jazz](notes/2-2)
 - [2/7/2022 - Early Jazz Principles](mus306/notes/2-7.md)
 - [2/9/2022 - Early Jazz: Louis Armstrong + Papa Joe](notes/2-9)
-- [2/14/2022 - Early Jazz: Armstrong's Hot 5](notes/2-14)
+- [2/14/2022 - Early Jazz: Armstrong's Hot 5](mus306/notes/2-14.md)
 - [2/16/2022 - Early Jazz: Jelly Roll + others](notes/2-16)
 - [2/21/2022 - Whiteman Alumni + Stride Piano](notes/2-21)
 - [2/23/2022 - Fats Waller + Boogie Woogie](notes/2-23)
