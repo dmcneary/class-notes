@@ -2,7 +2,7 @@
 - [1/27/2022 - Intro to Operating Systems](notes/1-27)
 - [2/1/2022 - Processes](notes/2-1)
 - [2/3/2022 - Processes cont.](notes/2-3)
-- [2/8/2022 - Scheduling](notes/2-8)
+- [2/8/2022 - Scheduling](comp322/notes/2-8.md)
 - [2/10/2022 - Scheduling cont.](notes/2-10)
 - [2/15/2022 - Scheduling cont.](notes/2-15)
 - [2/17/2022 - Concurrency, Synchronization, and Semaphores](notes/2-17)
